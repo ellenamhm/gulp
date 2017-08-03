@@ -1,5 +1,4 @@
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -13,7 +12,11 @@ body, html {
   margin: 0;
   padding: 0;
   max-width: 2000px;
-  /*-webkit-text-size-adjust: none;*/ }
+  /*-webkit-text-size-adjust: none;*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .wrapper {
   display: block;
@@ -26,7 +29,8 @@ body, html {
   min-width: 320px; }
 
 .header {
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
   background-position: center top;
